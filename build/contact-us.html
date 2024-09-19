@@ -455,12 +455,17 @@
         const map = new mapboxgl.Map({
             container: 'map', // The container ID
             style: 'mapbox://styles/mapbox/streets-v11', // The map style
-            center: [3.3792, 6.5244], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
+            center: [3.0469, 6.5538], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
             zoom: 10 // Initial zoom level
         });
 
         // Add zoom and rotation controls to the map
         map.addControl(new mapboxgl.NavigationControl());
+
+        const marker = new mapboxgl.Marker()
+            .setLngLat([3.0469, 6.5538])
+            .setPopup(new mapboxgl.Popup().setHTML("<h3>Cashier Bus Stop</h3><p>Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria</p>")) // Popup with description
+            .addTo(map);
     </script>
 
   </body>

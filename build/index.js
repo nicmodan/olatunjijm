@@ -307,6 +307,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${equpmentObjList[equType]['equpment']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
@@ -326,6 +327,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${equpmentObjList[equType]['equpment']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
@@ -345,6 +347,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${gallaryImage[equType]['eventName']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
@@ -362,6 +365,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${gallaryImage[equType]['eventName']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
@@ -380,6 +384,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${concreateImages[equType]['concreatName']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
@@ -398,6 +403,7 @@ const handleClickOpenBackgroung = (equType, type) =>{
           ${sallersSupplyImg[equType]['sallersSupplyName']}
         </h1>
         <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
 
         </div>
       </div>
