@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      Olatunji J Makinde & CO LTD- Architects|Engineers|Project Managers
+    </title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/png" href="./assets/faveIcon.PNG">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <div id="top-conner" class="body-container">
+        <header>
+          <div class="continer-logo">
+            <div class="con-logo">
+              <img src="./assets/faveIcon.PNG" alt="Olatunji Logo">
+            </div>
+            <div class="con-logo-info">
+                <h2>
+                  OLATUNJI J MAKINDE & CO
+                </h2>
+                <p>
+                  Engineering Designs & Construction
+                </p>
+            </div>
+          </div>
+          <nav class="responsive-nav">
+            <ol>
+              <li onmousemove="handelMouseHover()">
+                <a href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li onmousemove="handelMouseHover()">
+                <a href="./about-us.html">
+                  About Us
+                </a>
+              </li>
+              <li onmousemove="handelMouseMove()">
+                <a href="./services/index.html">
+                  Services
+                </a>
+                <div onmouseout="handelMouseOut()" class="hidden-nav" id="hid-nav">
+                  <ol>
+                    <li>
+                      <a href="./services/engineering-designs.html">
+                        Engineering Designs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/construction.html">
+                        Construction
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/electrical-services.html">
+                        Electrical Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/bore-hole-drilling.html">
+                        Bore Hole Drilling
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/equipment-rental.html">
+                        Equipment Rental
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/concrete-products.html">
+                        Concrete Products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/sales-supply.html">
+                        Sales & Supply
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./services/waste-disposal.html">
+                        Waste Disposal
+                      </a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li onmousemove="handelMouseMoveGal()">
+                <a href="./our-work/index.html">
+                  Our Work
+                </a>
+                <div onmouseout="handelMouseOutGal()" class="hidden-nav" id="hid-nav-gal">
+                  <ol>
+                    <li>
+                      <a href="./our-work/gallery.html">
+                        Gallary
+                      </a>
+                    </li>
+
+                  </ol>
+                </div>
+              </li>
+              <li onmousemove="handelMouseHover()">
+                <a href="./contact-us.html">
+                  Contact Us
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <div onclick="handelClickDisplayResponsiveMenue()" id="nav-span-con" class="nav-span-cotainer">
+            <div class="span-container">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+        </header>
+        <section>
+          <div class="section-index-container">
+              <div class="section-index-cover">
+                  <div class="section-index-info">
+                      <h1>
+                        Architects|Engineers|Project Managers
+                      </h1>
+                      <button type="button">
+                          KNOW MORE
+                      </button>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-second-info">
+              <div class="sec-info">
+                  <div class="sec-info-img">
+                    <img src="./assets/landing-page/house-construction-PHOTO.png" alt="engineering image"/>
+                  </div>
+                  <div class="sec-info-desc">
+                    <h4>
+                      ENGINEERING DESIGN
+                    </h4>
+                    <p>
+                      Architectural And Structural Designs Of Residential, Commercial, Public And Industrial Designs.<a href="./services/engineering-designs.html">Learn more</a>
+                    </p>
+                  </div>
+              </div>
+              <div class="sec-info">
+                <div class="sec-info-img">
+                  <img src="./assets/landing-page/construction-photo.jpg" alt="construction image"/>
+                </div>
+                <div class="sec-info-desc">
+                  <h4>
+                    CONSTRUCTION
+                  </h4>
+                  <p>
+                    We carry out Building, Civil, Electrical And Mechanical  Engineering      Construction Works.<a href="./services/construction.html">Learn more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="sec-info">
+                <div class="sec-info-img-display">
+                  <img src="./assets/landing-page/OLATUNJI.png" alt="engineering image"/>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-second-info">
+            <div class="sec-info sec-info-list">
+              <div class="sec-info-img">
+                <img src="./assets/landing-page/what-we-do-at-production-micro-concrete-products.jpg" alt="construction image"/>
+              </div>
+              <div class="sec-info-desc">
+                <h4>
+                  CONCRETE PRODUCTS
+                </h4>
+                <p>
+                  Very Solid 9” And 6”sandcrete blocks, kerbs, interlocking and paving stones. Produced life and direct on your site.<a href="./services/concrete-products.html">Learn more</a>
+                </p>
+              </div>
+            </div>
+            <div class="sec-info sec-info-list">
+              <div class="sec-info-img">
+                <img src="./assets/landing-page/cost-of-a-Bore-Hole-Drilling-Machine.jpg" alt="construction image"/>
+              </div>
+              <div class="sec-info-desc">
+                <h4>
+                  BORE-HOLE DRILLING
+                </h4>
+                <p>
+                  We are into portable water drilling borehole  with quality materials and at affordable cost.<a href="./services/bore-hole-drilling.html">Learn more</a>
+                </p>
+              </div>
+            </div>
+            <div class="sec-info sec-info-list">
+              <div class="sec-info-img">
+                <img src="./assets/equpment_images/Concrete-Mixers.png" alt="equipment image"/>
+              </div>
+              <div class="sec-info-desc">
+                <h4>
+                  EQUIPMENT RENTAL
+                </h4>
+                <p>
+                  We hire out construction machines and tools at affordable prices, concrete mixers, excavators, wheel loaders.<a href="./services/equipment-rental.html">Learn more</a>
+                </p>
+              </div>
+            </div>
+            <div class="sec-info sec-info-list">
+              <div class="sec-info-img">
+                <img src="./assets/landing-page/Picture23-PHOTO.jpg" alt="training image"/>
+              </div>
+              <div class="sec-info-desc">
+                <h4>
+                  TRAINING
+                </h4>
+                <p>
+                  We carry out training for potential engineers to ensure they perform their best.<a href="./contact-us.html">Learn more</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-eng-design">
+              <div class="section-eng-design-one">
+                <div class="section-eng-design-one-info">
+                  <h1>
+                      Engineering Designs
+                  </h1>
+                  <p>
+                      We perform an array of design plans to ensure that a construction is perfect.
+                  </p>
+                  <div class="section-eng-design-one-info-icone-key">
+                    <div class="section-eng-design-one-info-icone">
+                      <i class="fas fa-map-marker-alt" style="font-size: 48px; color: red;"></i>
+                    </div>
+                    <div class="section-eng-design-one-info-key">
+                      <h1>
+                        3D Presentation
+                      </h1>
+                      <p>
+                        With our advance design process, we create 3D visualizations of our designs to enable a client get a realistic picture of the
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-eng-design-one-img">
+                  <img src="./assets/landing-page/3-bedroom-bungalow-designs-remarkable-25-more-3d-floor-plans-home-design-ideas-12.png" alt="Engineering image">
+                </div>
+              </div>
+              <div class="section-eng-design-two">
+                <div class="section-eng-design-one-img">
+                  <img src="./assets/landing-page/OLATUNJI-MAKINDE-FLOOR-PLANS.jpg" alt="Engineering image">
+                </div>
+
+                <div class="section-eng-design-one-info section-eng-design-two-info ">
+
+                  <div class="section-eng-design-one-info-icone-key">
+                    <div class="section-eng-design-one-info-icone">
+                      <i class="fas fa-th-large" style="font-size: 48px; color: #ff5722;"></i>
+                    </div>
+                    <div class="section-eng-design-one-info-key">
+                      <h1>
+                        Floor Plans
+                      </h1>
+                      <p>
+                        We create well detailed floor plans, these floor plans assist us make information based decisions and accuracy in our construction.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </section>
+        <section>
+          <div class="section-install-waste">
+            <div class="section-install">
+                <img src="./assets/landing-page/Electrical-Services.png" alt="Electrical installastion image" />
+                <h1>
+                  Electrical Installations
+                </h1>
+                <p>
+                  We also offer electrical installation services, as a construction firm dedicated to excellent service, we at Olatunji J Makinde & CO LTD provide electrical service to cover;
+                </p>
+                <h4>
+                  Rural Electrification, Supply & Installation of Transformers
+                </h4>
+                <h4>
+                  Residential & Industrial Lighting, Power Distribution
+                </h4>
+                <h4>
+                  Routine Maintenance <a href="./services/electrical-services.html">Learn more</a>
+                </h4>
+
+            </div>
+            <div class="section-waste">
+              <div class="section-waste-disc">
+                <div class="section-waste-disc-icon">
+                  <i class="fas fa-trash" style="font-size: 48px; color: #ff5722;"></i>
+                </div>
+                <div class="section-waste-disc-info">
+                  <h1>
+                    Waste Disposal
+                  </h1>
+                  <p>
+                    In our bid to sustain the environment, we offer waste disposal services. We’re licensed by the Ogun State Ministry of Environment to carry out waste management practices to promote better living and a conducive environment. <a href="./services/waste-disposal.html">Learn more</a>
+                  </p>
+                </div>
+
+              </div>
+              <img class="section-waste-img" src="./assets/landing-page/garbage-1308138_1280.png" alt="Electrical installastion image" />
+
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-rental-equipment">
+            <h1>
+              Our Rental Equipment
+            </h1>
+            <div id="sect-rent-equip-con" class="section-rental-equipment-container">
+              <div
+                class="section-equipment"
+                onclick="handleClickOpenBackgroung('backhoe', 'equpment')"
+              >
+                <div class="section-equipment-img">
+                  <img src="./assets/equpment_images/backhoe.png" alt="backhoe image" />
+                  <div
+                      class="section-equipment-img-hover"
+                      onmousemove="handelMouseMoveDisplayText('section-equipment-img-hover-text', 'equpment', undefined)"
+                      onmouseout="handelMouseMovehiddeText('section-equipment-img-hover-text', 'equpment', undefined)"
+                  >
+                      <h3 id="section-equipment-img-hover-text" class="sec-eup-img-hov-txt">
+                        Show Image
+                      </h3>
+                  </div>
+                </div>
+                <div class="section-equipment-info">
+                  <h1>
+                    Backhoe
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="section-current-project">
+
+            <div class="section-current-project-conaier">
+              <h1>
+                Current Projects
+              </h1>
+              <ul>
+                  <li>
+                    6 Bedroom Duplex@8 portharcourt crescent Agbara Estate, Ado-odo Ota L.G.A Ogun State.
+                  </li>
+                  <li>
+                    Cold room & Supermarket/ Boutique@2 Raimi Alimi Closed Ijanikin Town Ojo L.G.A Lagos State.
+                  </li>
+                  <li>
+                    Construction of Concrete Drainage and Electrification Project @2Raimi Alimi Closed Ijanikin Town Ojo L.G.A Lagos State.
+                  </li>
+              </ul>
+
+              <button type="button">
+                  LETS START
+              </button>
+
+
+            </div>
+
+          </div>
+        </section>
+        <section>
+          <div class="section-gallary">
+            <h1>
+              Gallary
+            </h1>
+            <div id="sect-gall-img" class="section-gallary-image">
+              <div
+                class="section-gallary-img"
+                onclick="handleClickOpenBackgroung('coldroom_front', 'gallary')"
+              >
+                <img src="./assets/gallary/Coldroom-Front.jpg" alt="Coldroom Front image" />
+                <div
+                    class="section-gallary-img-hover"
+                    onmousemove="handelMouseMoveDisplayText('section-gallary-img-hover-text', 'gallary', undefined)"
+                    onmouseout="handelMouseMovehiddeText('section-gallary-img-hover-text', 'gallary', undefined)"
+
+                >
+                  <div class="section-gallary-img-hover-container">
+                    <h3 id="section-gallary-img-hover-text" class="sec-gall-img-hov-txt">
+                      <b>
+                        i
+                      </b>
+                    </h3>
+                    <h4 id="section-gallary-img-hover-text-name" class="sec-gall-img-hov-txt-name">
+                      Coldroom Front
+                    </h4>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <a class="load-more-gallary-butt" href="./our-work/gallery.html">
+              Load More
+            </a>
+          </div>
+        </section>
+        <section>
+          <div id="map" class="section-location">
+
+          </div>
+        </section>
+        <footer>
+          <div class="footer-container">
+            <div class="footer-header">
+              <div class="con-logo">
+                <img src="./assets/faveIcon.PNG" alt="Olatunji Logo">
+              </div>
+              <div class="con-logo-info">
+                  <h2>
+                    OLATUNJI J MAKINDE & CO
+                  </h2>
+              </div>
+            </div>
+            <div class="footer-container-body">
+              <div class="footer-contact-us">
+                  <h3>
+                    CONTACT US
+                  </h3>
+                  <div class="footer-contact-tel">
+                    <p>
+                      <b>
+                        TEL:
+                      </b>
+                      08034065968,  08086090430, 07057014518
+                    </p>
+                  </div>
+                  <div class="footer-contact-email">
+                    <p>
+                      <b>
+                        Email:
+                      </b>
+                      olatunjijm2013@yahoo.com, olatunjijm2014@gmail.com
+                    </p>
+                  </div>
+                  <div class="footer-contact-loc">
+                    <p>
+                      <b>
+                        MAIN OFFICE:
+                      </b>
+                      Cashier Bus Stop, Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria
+                    </p>
+                  </div>
+                  <div class="footer-contact-annex">
+                    <p>
+                      <b>
+                        ANNEX:
+                      </b>
+                      Ola Makinde’s Compound by Grace Court Hotel, Ago-Alaga, Lusada, Via Igbesa Ogun
+                    </p>
+                  </div>
+                  <div class="footer-contact-webmail-sighn-in">
+                    <a href="http://webmail.olatunjijm.com.ng">
+                      <b>
+                        WEBMAIL SIGN IN
+                      </b>
+                    </a>
+                  </div>
+                  <div class="footer-contact-social">
+                    <h3>Social Handels</h3>
+                    <a href="https://web.facebook.com/pages/Olatunji-J-Makinde-Company-Limited/235955523225441?_rdc=1&_rdr" class="social-handel">
+                      <i class="fab fa-facebook" style="font-size: 48px; color: blue;"></i>
+
+                    </a>
+                  </div>
+              </div>
+              <div class="footer-menu">
+                <h3>
+                  QUICK LINKS
+                </h3>
+                <ol>
+                  <li>
+                    <a href="./index.html">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./about-us.html">
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/index.html">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a  href="./services/engineering-designs.html">
+                      Engineering Designs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/construction.html">
+                      Construction
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/electrical-services.html">
+                      Electrical Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/bore-hole-drilling.html">
+                      Bore Hole Drilling
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/equipment-rental.html">
+                      Equipment Rental
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/concrete-products.html">
+                      Concrete Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/sales-supply.html">
+                      Sales & Supply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./services/waste-disposal.html">
+                      Waste Disposal
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./our-work/index.html">
+                      Our Work
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./our-work/gallery.html">
+                      Gallary
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./contact-us.html">
+                      Contact Us
+                    </a>
+                  </li>
+                </ol>
+              </div>
+              <div class="footer-info-container">
+                <div class="footer-info">
+                  <div class="footer-info-vision-mission">
+                    <h3>
+                      OUR MISSION
+                    </h3>
+                    <p>
+                      We  translate our  clients dreams into reality, concepts  and designs into sustainable structures.
+                    </p>
+                  </div>
+                  <div class="footer-info-vision-mission">
+                    <h3>
+                      OUR VISION
+                    </h3>
+                    <p>
+                      To designs and construct Economic and environment friendly structures to our Clients satisfaction.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer-info-value-container">
+                  <div class="footer-info-value ">
+                    <h3>
+                      OUR VALUE
+                    </h3>
+                    <p>
+                      Practical Demonstration of Professional Integrity without compromise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="footer-copy-right">
+
+
+              <p>
+                © Olatunji J Makinde & CO LTD 2024
+              </p>
+              <a href="https://modanmic.onrender.com">
+                Designed by MODANMIC Fintech from Lagose, Nigeria
+              </a>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <!-- fixed topcorner scrolling -->
+    <a href="#top-conner" class="top-scroll">
+      <i class="fas fa-arrow-up" style="font-size: 48px; color: black;"></i>
+
+    </a>
+    <div id="back-sec-scr" class="background-section-screen">
+      <div class="display-equp-img">
+        <div class="center-display-equp-img">
+          <img src="./assets/equpment_images/backhoe.png" alt="backhoe image">
+        </div>
+        <h1>
+          Equpment Name
+        </h1>
+        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+
+        </div>
+      </div>
+    </div>
+    <div id="res-nav-cov-con" class="responsive-nav-cover-container">
+      <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
+        <div class="span-container">
+
+          <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+        </div>
+      </div>
+      <ol>
+        <li>
+          <a href="./index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="./about-us.html">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="./services/index.html">
+            Services
+          </a>
+          <div class="responsive-nav-cover-container-list">
+            <ol>
+              <li>
+                <a href="./services/engineering-designs.html">
+                  Engineering Designs
+                </a>
+              </li>
+              <li>
+                <a href="./services/construction.html">
+                  Construction
+                </a>
+              </li>
+              <li>
+                <a href="./services/electrical-services.html">
+                  Electrical Services
+                </a>
+              </li>
+              <li>
+                <a href="./services/bore-hole-drilling.html">
+                  Bore Hole Drilling
+                </a>
+              </li>
+              <li>
+                <a href="./services/equipment-rental.html">
+                  Equipment Rental
+                </a>
+              </li>
+              <li>
+                <a href="./services/concrete-products.html">
+                  Concrete Products
+                </a>
+              </li>
+              <li>
+                <a href="./services/sales-supply.html">
+                  Sales & Supply
+                </a>
+              </li>
+              <li>
+                <a href="./services/waste-disposal.html">
+                  Waste Disposal
+                </a>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li>
+          <a href="./our-work/index.html">
+            Our Work
+          </a>
+          <div class="responsive-nav-cover-container-list">
+            <ol>
+              <li>
+                <a href="./our-work/gallery.html">
+                  Gallary
+                </a>
+              </li>
+
+            </ol>
+          </div>
+        </li>
+        <li>
+          <a href="./contact-us.html">
+            Contact Us
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <script src="./index.js">
+
+    </script>
+    <script>
+        displayEquipments("home")
+        displayGallary(4, "home")
+
+    </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script>
+        // Replace with your Mapbox access token
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWljbW9kYW4iLCJhIjoiY2txcWJ5NzhiMG03NzJ1bzE4MjU5eHIzdCJ9.WLkKeVRZM3iiocmzY7lOiQ';
+
+        // Create a new map
+        const map = new mapboxgl.Map({
+            container: 'map', // The container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // The map style
+            center: [3.3792, 6.5244], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
+            zoom: 10 // Initial zoom level
+        });
+
+        // Add zoom and rotation controls to the map
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox Lagos, Nigeria</title> -->
+    <!-- <style>
+        /* Set the size of the map */
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style> -->
+    <!-- Mapbox GL JS CSS -->
+    <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet"> -->
+<!-- </head>
+<body>
+
+    <h1>Map of Lagos, Nigeria</h1> -->
+    <!-- Container for the map -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Mapbox GL JS -->
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script>
+        // Replace with your Mapbox access token
+        mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN'; -->
+
+        <!-- // Create a new map -->
+        <!-- const map = new mapboxgl.Map({
+            container: 'map', // The container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // The map style
+            center: [3.3792, 6.5244], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
+            zoom: 10 // Initial zoom level
+        }); -->
+
+        `  <!-- // Add zoom and rotation controls to the map
+          map.addControl(new mapboxgl.NavigationControl());
+      </script>
+
+  </body>
+  </html>` -->
