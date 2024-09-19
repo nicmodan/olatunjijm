@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../index.css" />
     <link rel="icon" type="image/png" href="../assets/faveIcon.PNG" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    
+
   </head>
   <body>
     <div id="top-conner" class="body-container">
@@ -105,7 +105,7 @@
                 </div>
               </li>
               <li onmousemove="handelMouseHover()">
-                <a href="./contact-us.html">
+                <a href="../contact-us.html">
                   Contact Us
                 </a>
               </li>
@@ -121,80 +121,38 @@
 
         </header>
         <section>
-          <div class="section-equipment-body">
-            <div class="section-equipment-container">
-              <h1>
-                EQUIPMENT RENTAL
-              </h1>
-              <div class="section-equipment-container-info">
-                <p>
-                  Due to the high capital required to buy construction heavy equipment and tools, we at Olatunji J Makinde & CO LTD provide cost effective solutions for the rental of various construction tools and equipment.
-                </p>
-                <p>
-                  For any enquiry, please feel free to reach our <a href="../contact-us.html">contact numbers</a>, we have access to an array of tools at your disposal.
-                </p>
-              </div>
-              <div id="sect-rent-equip-con" class="section-rental-equipment-container">
-                <div
-                  class="section-equipment section-equipment-main"
-                  onclick="handleClickOpenBackgroung('backhoe', 'equpment')"
-                >
-                  <div class="section-equipment-img">
-                    <img src="../assets/equpment_images/backhoe.png" alt="backhoe image" />
-                    <div
-                        class="section-equipment-img-hover"
-                        onmousemove="handelMouseMoveDisplayText('section-equipment-img-hover-text', 'equpment', undefined)"
-                        onmouseout="handelMouseMovehiddeText('section-equipment-img-hover-text', 'equpment', undefined)"
-                    >
-                        <h3 id="section-equipment-img-hover-text" class="sec-eup-img-hov-txt">
-                          Show Image
-                        </h3>
-                    </div>
+            <div class="section-construction">
+              <div class="section-construction-body">
+                <h1>
+                  CONSTRUCTION
+                </h1>
+                <div class="section-construction-container-bg-img">
+
+                </div>
+                <div class="section-construction-container">
+                  <p>
+                    We provide clients transparency, collaboration and mutual benefit throughout the project.  We keep construction management at the core of our business because it is based on fresh thinking and collaboration from the start—both key parts of our company
+                  </p>
+                  <p>
+                    Our strength is our ability to develop innovative, practical solutions for our clients, we provide innovative and practical solutions in infrastructure and building construction.
+                  </p>
+                  <p>
+                    We specialize in the construction of residential and commercial buildings, warehouses, roads and many more.
+                  </p>
+                  <p>
+                    Olatunji J Makinde’s combination of training and experience translates into a history of job performance in everything from safety practices to crew productivity and timely project completion
+                  </p>
+                  <div class="section-construction-container-img">
+                    <img src="../assets/gallary/Reinforcements.jpg" alt="Reinforcements image" />
+                    <img src="../assets/gallary/Picture21.jpg" alt="Whear housing image" />
+
                   </div>
-                  <div class="section-equipment-info">
-                    <h1>
-                      Backhoe
-                    </h1>
-                  </div>
+
                 </div>
               </div>
-
-              <!-- <div class="section-gallary section-gallary-main">
-
-                <div id="sect-gall-img" class="section-gallary-image section-gallary-image-main">
-                  <div
-                    class="section-gallary-img "
-                    onclick="handleClickOpenBackgroung('coldroom_front', 'gallary')"
-                  >
-                    <img src="../assets/gallary/Coldroom-Front.jpg" alt="Coldroom Front image" />
-                    <div
-                        class="section-gallary-img-hover"
-                        onmousemove="handelMouseMoveDisplayText('section-gallary-img-hover-text', 'gallary', undefined)"
-                        onmouseout="handelMouseMovehiddeText('section-gallary-img-hover-text', 'gallary', undefined)"
-
-                    >
-                      <div class="section-gallary-img-hover-container">
-                        <h3 id="section-gallary-img-hover-text" class="sec-gall-img-hov-txt">
-                          <b>
-                            i
-                          </b>
-                        </h3>
-                        <h4 id="section-gallary-img-hover-text-name" class="sec-gall-img-hov-txt-name">
-                          Coldroom Front
-                        </h4>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-              </div> -->
 
             </div>
-            <a class="button-center" href="../contact-us.html">
-              HIRE EQUIPMENT
-            </a>
-          </div>
+
         </section>
         <footer>
             <div class="footer-container">
@@ -386,19 +344,6 @@
       <i class="fas fa-arrow-up" style="font-size: 48px; color: black;"></i>
 
     </a>
-    <div id="back-sec-scr" class="background-section-screen">
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src="../assets/equpment_images/backhoe.png" alt="backhoe image">
-        </div>
-        <h1>
-          Equpment Name
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-
-        </div>
-      </div>
-    </div>
     <div id="res-nav-cov-con" class="responsive-nav-cover-container">
       <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
         <div class="span-container">
@@ -492,10 +437,6 @@
     </div>
     <script src="../index.js">
 
-    </script>
-    <script>
-        displayEquipments("equip")
-        // displayGallary(17, "gallary")
     </script>
 
   </body>

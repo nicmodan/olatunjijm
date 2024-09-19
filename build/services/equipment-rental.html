@@ -105,7 +105,7 @@
                 </div>
               </li>
               <li onmousemove="handelMouseHover()">
-                <a href="./contact-us.html">
+                <a href="../contact-us.html">
                   Contact Us
                 </a>
               </li>
@@ -120,60 +120,80 @@
           </div>
 
         </header>
-        <style >
-            a{
-              text-decoration: none;
-
-            }
-
-        </style>
         <section>
-          <div class="section-service">
-            <div class="section-service-container">
+          <div class="section-equipment-body">
+            <div class="section-equipment-container">
               <h1>
-                SERVICES
+                EQUIPMENT RENTAL
               </h1>
-              <img src="../assets/Services/cranes-2961223_1920.jpg" alt="cranes image">
-              <p>
-                Olatunji J Makinde & CO LTD is a modern, quality driven engineering firm providing a full range of construction services from conception to architectural designs, project management and commissioning of completed projects, we service various sectors of the Nigerian economy. We have the required depth of knowledge and technical skill within our team to deliver an efficient, effective and high-quality service at economic and competitive prices. Below, you’ll find an array of services we offer;
-              </p>
-              <h3>
-                ENGINEERING DESIGN
-              </h3>
-              <p>
-                Architectural and Structural Designs of Residential, Commercial, Public and Industrial Designs. <a href="./engineering-designs.html">Continue</a>
-              </p>
-              <h3>
-                CONSTRUCTION
-              </h3>
-              <p>
-                We carry out Building, Civil, Electrical and Mechanical Engineering Construction Works. <a href="./construction.html">Continue</a>
-              </p>
-              <h3>
-                CONCRETE PRODUCTS
-              </h3>
-              <p>
-                We mold Very Solid 9” And 6” sandcrete blocks, kerbs, interlocking and paving stones. These products are manufactured using modern technologies to ensure quality and efficiency. <a href="./concrete-products.html">Continue</a>
-              </p>
-              <h3>
-                BORE-HOLE DRILLING
-              </h3>
-              <p>
-                We are into portable water drilling borehole with quality materials and at affordable cost. <a href="./bore-hole-drilling.html">Continue</a>
-              </p>
-              <h3>
-                SALES AND SUPPLY
-              </h3>
-              <p>
-                We supply quality building materials to site on demand and at affordable prices. <a href="./sales-supply.html">Continue</a>
-              </p>
-              <h3>
-                WASTE DISPOSAL
-              </h3>
-              <p>
-                In our bid to sustain the environment, we offer waste disposal services. We’re licensed by the Ogun State Ministry of Environment to carry out waste management practices to promote better living and a conducive environment. <a href="./waste-disposal.html">Continue</a>
-              </p>
+              <div class="section-equipment-container-info">
+                <p>
+                  Due to the high capital required to buy construction heavy equipment and tools, we at Olatunji J Makinde & CO LTD provide cost effective solutions for the rental of various construction tools and equipment.
+                </p>
+                <p>
+                  For any enquiry, please feel free to reach our <a href="../contact-us.html">contact numbers</a>, we have access to an array of tools at your disposal.
+                </p>
+              </div>
+              <div id="sect-rent-equip-con" class="section-rental-equipment-container">
+                <div
+                  class="section-equipment section-equipment-main"
+                  onclick="handleClickOpenBackgroung('backhoe', 'equpment')"
+                >
+                  <div class="section-equipment-img">
+                    <img src="../assets/equpment_images/backhoe.png" alt="backhoe image" />
+                    <div
+                        class="section-equipment-img-hover"
+                        onmousemove="handelMouseMoveDisplayText('section-equipment-img-hover-text', 'equpment', undefined)"
+                        onmouseout="handelMouseMovehiddeText('section-equipment-img-hover-text', 'equpment', undefined)"
+                    >
+                        <h3 id="section-equipment-img-hover-text" class="sec-eup-img-hov-txt">
+                          Show Image
+                        </h3>
+                    </div>
+                  </div>
+                  <div class="section-equipment-info">
+                    <h1>
+                      Backhoe
+                    </h1>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="section-gallary section-gallary-main">
+
+                <div id="sect-gall-img" class="section-gallary-image section-gallary-image-main">
+                  <div
+                    class="section-gallary-img "
+                    onclick="handleClickOpenBackgroung('coldroom_front', 'gallary')"
+                  >
+                    <img src="../assets/gallary/Coldroom-Front.jpg" alt="Coldroom Front image" />
+                    <div
+                        class="section-gallary-img-hover"
+                        onmousemove="handelMouseMoveDisplayText('section-gallary-img-hover-text', 'gallary', undefined)"
+                        onmouseout="handelMouseMovehiddeText('section-gallary-img-hover-text', 'gallary', undefined)"
+
+                    >
+                      <div class="section-gallary-img-hover-container">
+                        <h3 id="section-gallary-img-hover-text" class="sec-gall-img-hov-txt">
+                          <b>
+                            i
+                          </b>
+                        </h3>
+                        <h4 id="section-gallary-img-hover-text-name" class="sec-gall-img-hov-txt-name">
+                          Coldroom Front
+                        </h4>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div> -->
+
             </div>
+            <a class="button-center" href="../contact-us.html">
+              HIRE EQUIPMENT
+            </a>
           </div>
         </section>
         <footer>
@@ -366,6 +386,19 @@
       <i class="fas fa-arrow-up" style="font-size: 48px; color: black;"></i>
 
     </a>
+    <div id="back-sec-scr" class="background-section-screen">
+      <div class="display-equp-img">
+        <div class="center-display-equp-img">
+          <img src="../assets/equpment_images/backhoe.png" alt="backhoe image">
+        </div>
+        <h1>
+          Equpment Name
+        </h1>
+        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+
+        </div>
+      </div>
+    </div>
     <div id="res-nav-cov-con" class="responsive-nav-cover-container">
       <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
         <div class="span-container">
@@ -459,6 +492,10 @@
     </div>
     <script src="../index.js">
 
+    </script>
+    <script>
+        displayEquipments("equip")
+        // displayGallary(17, "gallary")
     </script>
 
   </body>

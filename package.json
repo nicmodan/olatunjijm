@@ -1,0 +1,31 @@
+{
+  "name": "olatunjiprojects",
+  "version": "1.0.0",
+  "description": "web-sit",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Oluwatosin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicmodan/olatunjijm.git"
+  },
+  "keywords": [
+    "https://github.com/nicmodan/olatunjijm\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b["
+  ],
+  "bugs": {
+    "url": "https://github.com/nicmodan/olatunjijm/issues"
+  },
+  "homepage": "https://github.com/nicmodan/olatunjijm#readme"
+}

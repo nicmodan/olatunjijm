@@ -105,7 +105,7 @@
                 </div>
               </li>
               <li onmousemove="handelMouseHover()">
-                <a href="./contact-us.html">
+                <a href="../contact-us.html">
                   Contact Us
                 </a>
               </li>
@@ -121,59 +121,43 @@
 
         </header>
         <section>
-            <div class="section-engineering-design">
-              <div class="section-engineering-design-container">
+          <div class="section-concreate-products">
+            <div class="section-concreate-products-container">
+              <h1>
+                SALES & SUPPLY
+              </h1>
+              <p>
+                We supply quality building  materials to site on demand and at affordable prices
+              </p>
 
-                <h1>
-                  ENGINEERING DESIGNS
-                </h1>
-                <div class="section-engineering-design-one">
-                  <div class="section-engineering-design-one-img">
-                    <img src="../assets/Services/outstanding-architectural-designs-ghana-pictures-design-inspiration-1.jpg" alt="architectural designs image" />
-                  </div>
-                  <div class="section-engineering-design-one-info">
-                    <p>
-                      Two key themes of the engineering design process are teamwork and design, we apply creativity and practicality to every project we handle, we incorporate various tools, technology and methods give ideas life.
-                    </p>
-                  </div>
-                </div>
-                <div class="section-engineering-design-one">
-                  <div class="section-engineering-design-one-info">
-                    <div class="">
-                      <h3>
-                        Architectural designs
-                      </h3>
-                      <p>
-                        We plan, design and review the construction of buildings, residential or commercial. Our profound knowledge base enables us make decisions based on aesthetics, environment, economics and safety of a given construction project.
-                      </p>
+              <div id="sect-rent-equip-con" class="section-rental-equipment-container">
+                <div
+                  class="section-equipment section-equipment-main"
+                  onclick="handleClickOpenBackgroung('backhoe', 'equpment')"
+                >
+                  <div class="section-equipment-img">
+                    <img src="../assets/equpment_images/backhoe.png" alt="backhoe image" />
+                    <div
+                        class="section-equipment-img-hover"
+                        onmousemove="handelMouseMoveDisplayText('section-equipment-img-hover-text', 'equpment', undefined)"
+                        onmouseout="handelMouseMovehiddeText('section-equipment-img-hover-text', 'equpment', undefined)"
+                    >
+                        <h3 id="section-equipment-img-hover-text" class="sec-eup-img-hov-txt">
+                          Show Image
+                        </h3>
                     </div>
-
                   </div>
-                  <div class="section-engineering-design-one-img">
-                    <img src="../assets/Services/awesome-architectural-designs-of-houses-images-decoration-ideas.png" alt="awesome architectural designs image" />
+                  <div class="section-equipment-info">
+                    <h1>
+                      Backhoe
+                    </h1>
                   </div>
                 </div>
-
-                <div class="section-engineering-design-one">
-                  <div class="section-engineering-design-one-img">
-                    <img src="../assets/Services/StructureImage1.png" alt="StructureImage image" />
-                  </div>
-                  <div class="section-engineering-design-one-info">
-                    <div class="">
-                      <h3>
-                        Structural Designs
-                      </h3>
-                      <p>
-                        In order for building to be safe, its structural design must be analyzed. We research the structural components, soil integrity and structural systems to achieve our design goals and ensure the safety and comfort of the occupants of a building.
-                      </p>
-                    </div>
-
-                  </div>
-
-                </div>
-
               </div>
+
             </div>
+
+          </div>
         </section>
         <footer>
             <div class="footer-container">
@@ -365,11 +349,25 @@
       <i class="fas fa-arrow-up" style="font-size: 48px; color: black;"></i>
 
     </a>
+    <div id="back-sec-scr" class="background-section-screen">
+      <div class="display-equp-img">
+        <div class="center-display-equp-img">
+          <img src="../assets/equpment_images/backhoe.png" alt="backhoe image">
+        </div>
+        <h1>
+          Equpment Name
+        </h1>
+        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+
+        </div>
+      </div>
+    </div>
     <div id="res-nav-cov-con" class="responsive-nav-cover-container">
       <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
         <div class="span-container">
 
           <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
 
         </div>
       </div>
@@ -458,6 +456,8 @@
     <script src="../index.js">
 
     </script>
-
+    <script>
+      displaySalessupply()
+    </script>
   </body>
 </html>

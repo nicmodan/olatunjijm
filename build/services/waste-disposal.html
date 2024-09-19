@@ -105,7 +105,7 @@
                 </div>
               </li>
               <li onmousemove="handelMouseHover()">
-                <a href="./contact-us.html">
+                <a href="../contact-us.html">
                   Contact Us
                 </a>
               </li>
@@ -121,40 +121,28 @@
 
         </header>
         <section>
-          <div class="section-concreate-products">
-            <div class="section-concreate-products-container">
-              <h1>
-                SALES & SUPPLY
-              </h1>
-              <p>
-                We supply quality building  materials to site on demand and at affordable prices
-              </p>
+          <div class="section-waste-container">
+            <h1>
+              WASTE DISPOSAL
+            </h1>
+            <div class="section-waste-container-img">
 
-              <div id="sect-rent-equip-con" class="section-rental-equipment-container">
-                <div
-                  class="section-equipment section-equipment-main"
-                  onclick="handleClickOpenBackgroung('backhoe', 'equpment')"
-                >
-                  <div class="section-equipment-img">
-                    <img src="../assets/equpment_images/backhoe.png" alt="backhoe image" />
-                    <div
-                        class="section-equipment-img-hover"
-                        onmousemove="handelMouseMoveDisplayText('section-equipment-img-hover-text', 'equpment', undefined)"
-                        onmouseout="handelMouseMovehiddeText('section-equipment-img-hover-text', 'equpment', undefined)"
-                    >
-                        <h3 id="section-equipment-img-hover-text" class="sec-eup-img-hov-txt">
-                          Show Image
-                        </h3>
-                    </div>
-                  </div>
-                  <div class="section-equipment-info">
-                    <h1>
-                      Backhoe
-                    </h1>
-                  </div>
-                </div>
+            </div>
+            <div class="section-waste-container-body">
+              <div class="section-waste-container-info">
+                <p>
+                  Olatunji J Makinde & CO LTD is dedicated to excellent customer service, preservation of valuable materials and protection of the environment.
+                </p>
+                <p>
+                  We offer garbage recycling and waste collection for residential, commercial, business and construction sites within Ogun State.
+                </p>
+                <p>
+                  We partner with the Government and its residents to manage and reduce waste from collection points to disposal at dump sites and finally recycling. Our services are cost effective with various plans to assist clients manage and reduce their waste.
+                </p>
               </div>
-
+              <div class="section-waste-contain-img">
+                <img src="../assets/Services/garbage.jpg" alt="garbage image" />
+              </div>
             </div>
 
           </div>
@@ -349,19 +337,6 @@
       <i class="fas fa-arrow-up" style="font-size: 48px; color: black;"></i>
 
     </a>
-    <div id="back-sec-scr" class="background-section-screen">
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src="../assets/equpment_images/backhoe.png" alt="backhoe image">
-        </div>
-        <h1>
-          Equpment Name
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-
-        </div>
-      </div>
-    </div>
     <div id="res-nav-cov-con" class="responsive-nav-cover-container">
       <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
         <div class="span-container">
@@ -456,8 +431,6 @@
     <script src="../index.js">
 
     </script>
-    <script>
-      displaySalessupply()
-    </script>
+
   </body>
 </html>
