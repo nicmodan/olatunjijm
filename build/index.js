@@ -636,3 +636,7 @@ const displayGallary = (numbers, type)=>{
   }
 
 }
+
+const onHandelOnClick = () =>{
+  window.location.replace("./about-us.html")
+}

@@ -1,8 +1,19 @@
 body{
   margin: 5px;
-  background-color: yellow;
+  /* background-color: yellow; */
   position: relative;
   scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, a{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  text-decoration: none;
+}
+p, a, li, button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 .body-container{
   width: 100%;
@@ -14,6 +25,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 10px;
 }
 .continer-logo{
   display: flex;
@@ -75,7 +87,7 @@ nav>ol>li>a:hover{
   list-style: none;
   margin-bottom: 20px;
   margin-top: 10px;
-  border-bottom: 1px solid skyblue;
+  /* border-bottom: 1px solid skyblue; */
   padding-bottom: 5px;
 }
 
@@ -198,7 +210,7 @@ section{
 .section-second-info{
   width: 100%;
   height: auto;
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -206,7 +218,7 @@ section{
 .sec-info{
   width: 350px;
   height: 400px;
-  background-color: yellow;
+  background-color: #e3e3d2;
 }
 .sec-info-img, .sec-info-img-display{
   display: flex;
@@ -228,8 +240,8 @@ section{
 }
 .sec-info-list{
   width: 280px;
-  height: 350px;
-  background-color: pink;
+  height: 370px;
+  background-color: whitesmoke;
 }
 /* SECTION */
 
@@ -240,7 +252,7 @@ section{
 .section-eng-design-one{
   width: 100%;
   height: 50vh;
-  background-color: skyblue;
+  background-color: #87ceeb82;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -274,7 +286,7 @@ section{
 .section-eng-design-two{
   width: 100%;
   height: 70vh;
-  background-color: orange;
+  background-color: #efece6;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -290,12 +302,12 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: gold;
+  background-color: #d5d5d5bf;
 }
 .section-install{
   width: 40%;
   height: 90vh;
-  background-color: pink;
+  background-color: white;
   padding: 10px;
 }
 .section-install>img{
@@ -308,7 +320,7 @@ section{
 .section-waste{
   width: 40%;
   height: 90vh;
-  background-color: brown;
+  background-color: white;
 }
 .section-waste-disc{
   display: flex;
@@ -393,7 +405,7 @@ section{
 .section-current-project{
   width: 100%;
   height: 60vh;
-  background-color: lightgreen;
+  background-color: #e7e7e787;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +467,7 @@ section{
   width: 50px;
   display: block;
   height: 50px;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,7 +475,7 @@ section{
 .section-gallary{
   width: 100%;
   height: 70vh;
-  background-color: skyblue;
+  background-color: white;
   /* display: block; */
 }
 .section-gallary-main{
@@ -818,7 +830,7 @@ section{
 }
 .section-work-body{
   width: 100%;
-  height: 180vh;
+  height: 200vh;
   display: flex;
   justify-content: space-between;
 }
@@ -908,7 +920,7 @@ section{
   width: 100%;
 }
 .footer-info-vision-mission{
-  background-color: red;
+  background-color: white;
   width: 45%;
 }
 .footer-info-value{
@@ -930,7 +942,7 @@ section{
 .display-equp-img{
   width: 500px;
   height: auto;
-  background-color: red;
+  background-color: black;
   text-align: center;
   position: relative;
   color: white;
@@ -1024,6 +1036,8 @@ section{
   }
   .section-install{
     width: 95%;
+    margin-bottom: 30px;
+    height: 100vh;
   }
   .section-install>img {
     width: 80%;
@@ -1045,10 +1059,10 @@ section{
   }
 
   .section-current-project {
-    height: 80vh;
+    height: 90vh;
   }
   .section-gallary {
-    height: 210vh;
+    height: 250vh;
   }
   .section-gallary-image {
     display: block;
@@ -1073,11 +1087,15 @@ section{
     float: none;
     margin: auto;
     margin-bottom: 50px;
+    width: 100%;
   }
   .section-engineering-design-one {
     width: 100%;
     height: 100vh;
     display: block;
+  }
+  p{
+    line-height: 20px;
   }
   .section-engineering-design-one-img {
     width: 100%;
