@@ -133,7 +133,8 @@
                 <b>
                   Tel:
                 </b>
-                08034065968,  08086090430, 07057014518
+                08034065968
+                  <!-- 08086090430, 07057014518 -->
               </p>
               <p>
                 <b>
@@ -147,12 +148,12 @@
                 </b>
                 Cashier Bus Stop, Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria.
               </p>
-              <p>
+              <!-- <p>
                 <b>
                   ANNEX:
                 </b>
                 Ola Makinde’s Compound by Grace Court Hotel, Ago-Alaga, Lusada, Via Igbesa Ogun.
-              </p>
+              </p> -->
             </div>
           </div>
         </section>
@@ -183,7 +184,8 @@
                       <b>
                         TEL:
                       </b>
-                      08034065968,  08086090430, 07057014518
+                      08034065968,
+                       <!-- 08086090430, 07057014518 -->
                     </p>
                   </div>
                   <div class="footer-contact-email">
@@ -202,14 +204,14 @@
                       Cashier Bus Stop, Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria
                     </p>
                   </div>
-                  <div class="footer-contact-annex">
+                  <!-- <div class="footer-contact-annex">
                     <p>
                       <b>
                         ANNEX:
                       </b>
                       Ola Makinde’s Compound by Grace Court Hotel, Ago-Alaga, Lusada, Via Igbesa Ogun
                     </p>
-                  </div>
+                  </div> -->
                   <div class="footer-contact-webmail-sighn-in">
                     <a href="http://webmail.olatunjijm.com.ng">
                       <b>
@@ -455,15 +457,15 @@
         const map = new mapboxgl.Map({
             container: 'map', // The container ID
             style: 'mapbox://styles/mapbox/streets-v11', // The map style
-            center: [3.0469, 6.5538], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
-            zoom: 10 // Initial zoom level
+            center: [3.3488896, 6.537216], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
+            zoom: 15  // Initial zoom level
         });
 
         // Add zoom and rotation controls to the map
         map.addControl(new mapboxgl.NavigationControl());
-
+        //
         const marker = new mapboxgl.Marker()
-            .setLngLat([3.0469, 6.5538])
+            .setLngLat([3.3488896, 6.537216])
             .setPopup(new mapboxgl.Popup().setHTML("<h3>Cashier Bus Stop</h3><p>Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria</p>")) // Popup with description
             .addTo(map);
     </script>

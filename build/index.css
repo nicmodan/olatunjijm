@@ -358,7 +358,7 @@ section{
   float: left;
   margin: auto;
   margin-right: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 95px;
 }
 .section-equipment-concreate{
   width: 340px;
@@ -535,7 +535,8 @@ section{
 }
 .sec-gall-img-hov-txt-name{
   width: auto;
-  height: 50px;
+  height: auto;
+  padding: 10px;
   display: none;
   align-items: center;
   justify-content: center;
@@ -545,7 +546,7 @@ section{
   font-weight: bold;
 }
 .section-gallary-img-hover-container{
-  width: 40%;
+  width: 80%;
   height: 50%;
   /* background-color: red; */
   text-align: -webkit-center;
@@ -939,13 +940,29 @@ section{
   align-items: center;
   justify-content: center;
 }
+.background-section-screen-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-close{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.display-equp-img-container{
+  position: absolute;
+}
 .display-equp-img{
   width: 500px;
   height: auto;
-  background-color: black;
+  background-color: white;
   text-align: center;
   position: relative;
-  color: white;
+  color: black;
 
 }
 .center-display-equp-img{

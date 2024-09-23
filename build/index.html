@@ -445,7 +445,8 @@
                       <b>
                         TEL:
                       </b>
-                      08034065968,  08086090430, 07057014518
+                      08034065968
+                       <!-- 08086090430, 07057014518 -->
                     </p>
                   </div>
                   <div class="footer-contact-email">
@@ -616,17 +617,27 @@
 
     </a>
     <div id="back-sec-scr" class="background-section-screen">
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src="./assets/equpment_images/backhoe.png" alt="backhoe image">
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
+
         </div>
-        <h1>
-          Equpment Name
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 30px; color: red;"></i>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+
+            <div class="center-display-equp-img">
+              <img src="./assets/equpment_images/backhoe.png" alt="backhoe image">
+            </div>
+            <h1>
+              Equpment Name
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 30px; color: red;"></i>
+            </div>
+          </div>
         </div>
+
       </div>
+
     </div>
     <div id="res-nav-cov-con" class="responsive-nav-cover-container">
       <div onclick="handelClickHiddeResponsiveMenue()" id="nav-span-con-close" class="nav-span-cotainer-close">
@@ -737,15 +748,15 @@
         const map = new mapboxgl.Map({
             container: 'map', // The container ID
             style: 'mapbox://styles/mapbox/streets-v11', // The map style
-            center: [3.0469, 6.5538], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
-            zoom: 10 // Initial zoom level
+            center: [3.3488896, 6.537216], // Coordinates of Lagos, Nigeria [Longitude, Latitude]
+            zoom: 15 // Initial zoom level
         });
 
         // Add zoom and rotation controls to the map
         map.addControl(new mapboxgl.NavigationControl());
 
         const marker = new mapboxgl.Marker()
-            .setLngLat([3.0469, 6.5538])
+            .setLngLat([3.3488896, 6.537216])
             .setPopup(new mapboxgl.Popup().setHTML("<h3>Cashier Bus Stop</h3><p>Agbara-Atan Road, Opic Estate, Agbara, Ogun State, Nigeria</p>")) // Popup with description
             .addTo(map);
     </script>

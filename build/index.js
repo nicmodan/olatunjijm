@@ -1,15 +1,27 @@
 const equpmentObjList = {
   // assets\equpment_images\backhoe.png
+  columnsSteelFormwork: {
+    equpment: "Columns Steel formwork",
+    equipment_ulr: "assets/equpment_images/Columns_Steel_formwork.png"
+  },
+  Scaffolds: {
+    equpment: "Scaffolds",
+    equipment_ulr: "assets/equpment_images/Scaffolds.jpg"
+  },
   backhoe: {
-    equpment: "Backhoe",
+    equpment: "Backhoe Loaders",
     equipment_ulr: "assets/equpment_images/backhoe.png"
+  },
+  Scaffolds: {
+    equpment: "Scaffolds",
+    equipment_ulr: "assets/equpment_images/Scaffolds.jpg"
   },
   concrete_mixers: {
     equpment: "Concrete Mixers",
     equipment_ulr: "assets/equpment_images/Concrete-Mixers.png"
   },
   crane: {
-    equpment: "Crane",
+    equpment: "Grove Crane",
     equipment_ulr: "assets/equpment_images/crane.png"
   },
   dump_truck: {
@@ -20,12 +32,16 @@ const equpmentObjList = {
     equpment: "Excavator",
     equipment_ulr: "assets/equpment_images/excavator.png"
   },
+  movableScaffolds: {
+    equpment: "Movable Scaffolds",
+    equipment_ulr: "assets/equpment_images/Movable_scaffolds.png"
+  },
   grader_1: {
-    equpment: "Grader 1",
+    equpment: "Motor Grader",
     equipment_ulr: "assets/equpment_images/Grader-1.png"
   },
   haammers: {
-    equpment: "Haammers",
+    equpment: "Dewalt Demolition Hammer",
     equipment_ulr: "assets/equpment_images/Haammers.png"
   },
   hand_compactors: {
@@ -33,7 +49,7 @@ const equpmentObjList = {
     equipment_ulr: "assets/equpment_images/Hand-Compactors.jpg"
   },
   miningtruck: {
-    equpment: "Mining Truck",
+    equpment: "Articulated Dumb Truck",
     equipment_ulr: "assets/equpment_images/miningtruck.png"
   },
   road_saws: {
@@ -51,6 +67,22 @@ const equpmentObjList = {
 }
 
 const gallaryImage = {
+  mainOfficeYard: {
+    eventName: "Main Office and Yard",
+    eventName_url: "assets/gallary/Main-Office-and-yard.jpg"
+  },
+  floors4_hotel: {
+    eventName: "Construction of 4 floors hotel building at Abeokuta",
+    eventName_url: "assets/gallary/Construction-of-4-floors-hotel-building-at-Abeokuta.jpg"
+  },
+  modificationOfCACHosannaChapel: {
+    eventName: "Modification of CAC Hosanna Chapel Ikorogboji Agbara Estate",
+    eventName_url: "assets/gallary/Modification-of-CAC-Hosanna-Chapel-Ikorogboji-Agbara-Estate.jpg"
+  },
+  wallAndFloorTilesWorks: {
+    eventName: "Wall and Floor Tiles Works",
+    eventName_url: "assets/gallary/Wall-and-floor-tiles-works.jpg"
+  },
   coldroom_front: {
     eventName: "Coldroom Front",
     eventName_url: "assets/gallary/Coldroom-Front.jpg"
@@ -157,21 +189,30 @@ const concreateImages = {
 const sallersSupplyImg = {
   // assets\Services\
   wood: {
-    sallersSupplyName: "Wood",
+    sallersSupplyName: "Woods",
     sallersSuppl_url: "../assets/Services/Wood.png"
   },
-  sand38: {
-    sallersSupplyName: "3 8 Sand",
-    sallersSuppl_url: "../assets/Services/3-8-Sand.jpg"
+  // sand38: {
+  //   sallersSupplyName: "3 8 Sand",
+  //   sallersSuppl_url: "../assets/Services/3-8-Sand.jpg"
+  // },
+  // woodDoor: {
+  //   sallersSupplyName: "Wooden Door",
+  //   sallersSuppl_url: "../assets/Services/Door-PNG-File.png"
+  // },
+  metalAluminonWoodenDoor: {
+    sallersSupplyName: "Metal, Aluminon & Wooden Door",
+    sallersSuppl_url: "../assets/Services/metal-aluminon-wooden-door.PNG"
   },
-  woodDoor: {
-    sallersSupplyName: "Wooden Door",
-    sallersSuppl_url: "../assets/Services/Door-PNG-File.png"
+  // assets\Services\sharp-granites-plaster-sand.PNG
+  granitesSharpPlasterSand: {
+    sallersSupplyName: "Granites, Sharp & plaster sand",
+    sallersSuppl_url: "../assets/Services/sharp-granites-plaster-sand.PNG"
   },
-  sharpSand: {
-    sallersSupplyName: "Sharp Sand",
-    sallersSuppl_url: "../assets/Services/Sharp-Sand-2.jpg"
-  },
+  // sharpSand: {
+  //   sallersSupplyName: "Sharp Sand",
+  //   sallersSuppl_url: "../assets/Services/Sharp-Sand-2.jpg"
+  // },
   roofingSheets: {
     sallersSupplyName: "Roofing Sheets",
     sallersSuppl_url: "../assets/Services/Roofing-Sheets.png"
@@ -183,19 +224,21 @@ const sallersSupplyImg = {
   reinforcements: {
     sallersSupplyName: "Reinforcements",
     sallersSuppl_url: "../assets/Services/Reinforcements.jpg"
-  },
-  chippingStones: {
-    sallersSupplyName: "Chipping Stones",
-    sallersSuppl_url: "../assets/Services/Chipping-Stones.jpg"
-  },
-  doors: {
-    sallersSupplyName: "Doors",
-    sallersSuppl_url: "../assets/Services/Doors.png"
-  },
-  chippingStonesRed: {
-    sallersSupplyName: "Chipping Stones Red",
-    sallersSuppl_url: "../assets/Services/Chipping-Stones-Red.jpg"
   }
+
+  // chippingStones: {
+  //   sallersSupplyName: "Chipping Stones",
+  //   sallersSuppl_url: "../assets/Services/Chipping-Stones.jpg"
+  // },
+  // doors: {
+  //   sallersSupplyName: "Doors",
+  //   sallersSuppl_url: "../assets/Services/Doors.png"
+  // }
+  // ,
+  // chippingStonesRed: {
+  //   sallersSupplyName: "Chipping Stones Red",
+  //   sallersSuppl_url: "../assets/Services/Chipping-Stones-Red.jpg"
+  // }
 }
 
 const handelMouseMove = () =>{
@@ -297,19 +340,42 @@ const handleClickOpenBackgroung = (equType, type) =>{
   console.log(equType);
   if (type === 'equpment') {
 
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src=${equpmentObjList[equType]['equipment_ulr']} alt="${equpmentObjList[equType]['equpment']} image" />
+    //   </div>
+    //   <h1>
+    //     ${equpmentObjList[equType]['equpment']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
+
     const target = equpmentObjList[equType]
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src=${equpmentObjList[equType]['equipment_ulr']} alt="${equpmentObjList[equType]['equpment']} image" />
-        </div>
-        <h1>
-          ${equpmentObjList[equType]['equpment']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()" class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src=${equpmentObjList[equType]['equipment_ulr']} alt="${equpmentObjList[equType]['equpment']} image" />
+            </div>
+            <h1>
+              ${equpmentObjList[equType]['equpment']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     document.getElementById("back-sec-scr").innerHTML = setTarget
@@ -318,18 +384,42 @@ const handleClickOpenBackgroung = (equType, type) =>{
   else if (type === 'equpment-main') {
 
     const target = equpmentObjList[equType]
+
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src='../${equpmentObjList[equType]['equipment_ulr']}' alt="${equpmentObjList[equType]['equpment']} image" />
+    //   </div>
+    //   <h1>
+    //     ${equpmentObjList[equType]['equpment']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
+
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src='../${equpmentObjList[equType]['equipment_ulr']}' alt="${equpmentObjList[equType]['equpment']} image" />
-        </div>
-        <h1>
-          ${equpmentObjList[equType]['equpment']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src='../${equpmentObjList[equType]['equipment_ulr']}' alt="${equpmentObjList[equType]['equpment']} image" />
+            </div>
+            <h1>
+              ${equpmentObjList[equType]['equpment']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     document.getElementById("back-sec-scr").innerHTML = setTarget
@@ -338,36 +428,82 @@ const handleClickOpenBackgroung = (equType, type) =>{
   else if(type === 'gallary') {
 
     const target = gallaryImage[equType]
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src=${gallaryImage[equType]['eventName_url']} alt="${gallaryImage[equType]['eventName']} image" />
+    //   </div>
+    //   <h1>
+    //     ${gallaryImage[equType]['eventName']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
+
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src=${gallaryImage[equType]['eventName_url']} alt="${gallaryImage[equType]['eventName']} image" />
-        </div>
-        <h1>
-          ${gallaryImage[equType]['eventName']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src=${gallaryImage[equType]['eventName_url']} alt="${gallaryImage[equType]['eventName']} image" />
+            </div>
+            <h1>
+              ${gallaryImage[equType]['eventName']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     document.getElementById("back-sec-scr").innerHTML = setTarget
 
   }else if (type === 'gallary-main') {
     const target = gallaryImage[equType]
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src='../${gallaryImage[equType]['eventName_url']}' alt="${gallaryImage[equType]['eventName']} image" />
+    //   </div>
+    //   <h1>
+    //     ${gallaryImage[equType]['eventName']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src='../${gallaryImage[equType]['eventName_url']}' alt="${gallaryImage[equType]['eventName']} image" />
-        </div>
-        <h1>
-          ${gallaryImage[equType]['eventName']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src='../${gallaryImage[equType]['eventName_url']}' alt="${gallaryImage[equType]['eventName']} image" />
+            </div>
+            <h1>
+              ${gallaryImage[equType]['eventName']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     document.getElementById("back-sec-scr").innerHTML = setTarget
@@ -375,18 +511,42 @@ const handleClickOpenBackgroung = (equType, type) =>{
   }
   else if (type === "concreate") {
     const target = concreateImages[equType]
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src='${concreateImages[equType]['concreate_url']}' alt="${concreateImages[equType]['concreatName']} image" />
+    //   </div>
+    //   <h1>
+    //     ${concreateImages[equType]['concreatName']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src='${concreateImages[equType]['concreate_url']}' alt="${concreateImages[equType]['concreatName']} image" />
-        </div>
-        <h1>
-          ${concreateImages[equType]['concreatName']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src='${concreateImages[equType]['concreate_url']}' alt="${concreateImages[equType]['concreatName']} image" />
+            </div>
+            <h1>
+              ${concreateImages[equType]['concreatName']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     // concreatName
@@ -394,18 +554,41 @@ const handleClickOpenBackgroung = (equType, type) =>{
     document.getElementById("back-sec-scr").innerHTML = setTarget
   }else if(type === 'sallersSupply'){
     const target = sallersSupplyImg[equType]
+    // <div class="display-equp-img">
+    //   <div class="center-display-equp-img">
+    //     <img src='${sallersSupplyImg[equType]['sallersSuppl_url']}' alt="${sallersSupplyImg[equType]['sallersSupplyName']} image" />
+    //   </div>
+    //   <h1>
+    //     ${sallersSupplyImg[equType]['sallersSupplyName']}
+    //   </h1>
+    //   <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+    //       <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+    //
+    //   </div>
+    // </div>
     const setTarget = `
-      <div class="display-equp-img">
-        <div class="center-display-equp-img">
-          <img src='${sallersSupplyImg[equType]['sallersSuppl_url']}' alt="${sallersSupplyImg[equType]['sallersSupplyName']} image" />
-        </div>
-        <h1>
-          ${sallersSupplyImg[equType]['sallersSupplyName']}
-        </h1>
-        <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
-            <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+
+
+      <div class="background-section-screen-container">
+        <div onclick="handleClickCloseBackgroung()"  class="background-close">
 
         </div>
+        <div class="display-equp-img-container">
+          <div class="display-equp-img">
+            <div class="center-display-equp-img">
+              <img src='${sallersSupplyImg[equType]['sallersSuppl_url']}' alt="${sallersSupplyImg[equType]['sallersSupplyName']} image" />
+            </div>
+            <h1>
+              ${sallersSupplyImg[equType]['sallersSupplyName']}
+            </h1>
+            <div onclick="handleClickCloseBackgroung()" class="display-equp-img-close">
+                <i class="fas fa-times" style="font-size: 48px; color: red;"></i>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     `
     // sallersSupplyName
