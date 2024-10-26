@@ -479,7 +479,8 @@ section{
   /* display: block; */
 }
 .section-gallary-main{
-  height: 230vh;
+  /* height: 230vh; */
+  height: auto;
 }
 .section-gallary>h1{
   text-align: center;
@@ -1162,7 +1163,9 @@ section{
     align-items: center;
   }
   .section-gallary-main{
-    height: 800vh;
+    /* height: 800vh; */
+    height: auto;
+
   }
   .section-waste-container-body {
     display: block;

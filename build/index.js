@@ -4,7 +4,7 @@
 const getAccountInfo = async ()=>{
   try {
 
-    const handeLocalhostLocation = `http://localhost:3001/api/`
+    const handeLocalhostLocation = 'https://olatunjijmbackend.onrender.com/api/' // `http://localhost:3001/api/` // https://olatunjijmbackend.onrender.com/api/
     // const response = await fetch(`${handeLocalhostLocation}account/${jsonGetUserInfo?.email}`)
     const response = await fetch(`${handeLocalhostLocation}account/${"olatunjiJm@modanmic.com"}`)
     // olatunjiJm@modanmic.com
@@ -16,7 +16,8 @@ const getAccountInfo = async ()=>{
     if (response.status === 200) {
       // console.log(responseData?.account)
       // jsonGetUserInfo = responseData?.account
-      localStorage.setItem("adminDate", JSON.stringify(responseData?.account))
+      // localStorage.setItem("adminDate", JSON.stringify(responseData?.account))
+
       return responseData?.account
     } else {
       console.log(responseData.error)
@@ -36,14 +37,16 @@ const result = async()=>{
   // localStorage.setItem("adminDate", JSON.stringify(jsonGetUserInfo[0]))
   if (jsonGetUserInfo[0]) {
 
+    let getUserinfo = localStorage.getItem("adminDate")
+    // let jsonGetUserInfoMian = JSON.parse(getUserinfo)
     // const getCurrentLoc = window.location.href.split('/')
     // const getPageName = getCurrentLoc[getCurrentLoc.length-1].split('?')[0]
-    let getUserinfo = localStorage.getItem("adminDate")
-    let jsonGetUserInfo = JSON.parse(getUserinfo)
+    localStorage.setItem("adminDate", JSON.stringify(jsonGetUserInfo[0]))
 
-    console.log(jsonGetUserInfo?.email)
+    console.log(jsonGetUserInfo[0])
+    console.log(!getUserinfo)
 
-    if (!jsonGetUserInfo?.email) {
+    if (!getUserinfo) {
       location.reload();
     }
 
@@ -876,8 +879,11 @@ const displayGallary = (numbers, type)=>{
     // console.log(getAllEqupmentDisplay)
     document.getElementById("sect-gall-img").innerHTML = getAllEqupmentDisplay
   }else {
-    const getObjectKeys = Object.keys(gallaryImage).slice(0, numbers)
-
+    let getObjectKeys = Object.keys(gallaryImage)//.slice(0, numbers)
+    getObjectKeys = getObjectKeys.filter(val=>val !== "Before")
+    getObjectKeys = getObjectKeys.filter(val=>val !== "After")
+// .section-gallary-main
+    // console.log(Object.keys(gallaryImage), getObjectKeys)
     let getAllEqupmentDisplay = ""
     getObjectKeys.map((val, idx) =>{
       console.log(val, idx)
